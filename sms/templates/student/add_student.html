@@ -15,7 +15,7 @@
       Add Student
     </h2>
 
-    <form method="POST" class="space-y-4">
+   <form method="POST" class="space-y-4"> 
       {% csrf_token %}
 
     
@@ -57,12 +57,10 @@
 
       <!-- Buttons -->
       <div class="flex justify-between">
-
-        <a 
-          href=""
+        <a href="{% url 'student_home' %}"
           class="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500"
         >
-          Cancel
+         Back
         </a>
 
         <button 
